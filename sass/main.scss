@@ -1,0 +1,67 @@
+$color1: #292F36;
+$ffamily: 'DM Serif Display',
+    serif;
+$ffamily2: "Jost",
+    sans-serif;
+
+@mixin style1($fsize, $fheight) {
+    font-family: $ffamily;
+    font-weight: 400;
+    font-size: $fsize;
+    line-height: $fheight;
+    letter-spacing: 2px;
+    color: $color1;
+}
+
+@mixin style2($fsize2, $fheight2) {
+    font-family: $ffamily;
+    font-weight: 400;
+    font-size: $fsize2;
+    line-height: $fheight2;
+    letter-spacing: 2px;
+    color: $color1;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "DM Serif Display", serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import './header';
+@import './heroSection';
+@import './section2';
+@import './footer';

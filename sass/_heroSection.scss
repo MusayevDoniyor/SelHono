@@ -1,0 +1,280 @@
+// * For Big screens
+@media screen and (min-width:1024px) {
+    .hero {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .hero-main {
+        width: 85%;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-main h2 {
+        width: auto;
+        height: auto;
+        @include style1(50px, 62.5px);
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .boxImg {
+        width: 48%;
+        height: auto;
+    }
+
+    .boxInfo {
+        width: 48%;
+        height: auto;
+    }
+
+    .boxInfo h3 {
+        width: 100%;
+        height: auto;
+        @include style2(25px, 31.25px);
+        margin-top: -5px;
+    }
+
+    .boxInfo .info {
+        width: 94%;
+        height: auto;
+        font-family: $ffamily2;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 1px;
+        color: #4d5053;
+    }
+
+    .boxInfo span {
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        p {
+            font-family: $ffamily2;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 1px;
+            color: #4d5053;
+        }
+
+
+        a {
+            color: $color1 ;
+
+            i {
+                width: 52px;
+                height: 52px;
+                background-color: #F4F0EC;
+                border-radius: 50%;
+                font-size: 24px;
+                right: 5px;
+                position: absolute;
+                align-items: center;
+                padding-top: 12px;
+                padding-left: 12px;
+            }
+        }
+    }
+}
+
+
+// * For Laptops and for Medium screens
+@media screen and (max-width:1023px) and (min-width:768px) {
+    .hero {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-main {
+        width: 85%;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-main h2 {
+        width: auto;
+        height: auto;
+        @include style1(46px, 60px);
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .boxImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .boxInfo {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .boxInfo h3 {
+        width: 100%;
+        height: auto;
+        @include style2(23px, 30px);
+        margin-top: -5px;
+    }
+
+    .boxInfo .info {
+        width: 94%;
+        height: auto;
+        font-family: $ffamily2;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 1px;
+        color: #4d5053;
+    }
+
+    .boxInfo span {
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        p {
+            font-family: $ffamily2;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 1px;
+            color: #4d5053;
+        }
+
+
+        a {
+            color: $color1 ;
+
+            i {
+                width: 52px;
+                height: 52px;
+                background-color: #F4F0EC;
+                border-radius: 50%;
+                font-size: 24px;
+                right: 5px;
+                position: absolute;
+                align-items: center;
+                padding-top: 12px;
+                padding-left: 12px;
+            }
+        }
+    }
+}
+
+// * For Mobile phones
+@media screen and (max-width:767px) and (min-width: 320px) {
+    .hero {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-main {
+        width: 85%;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-main h2 {
+        width: auto;
+        height: auto;
+        @include style1(42px, 54px);
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .boxImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .boxInfo {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .boxInfo h3 {
+        width: 100%;
+        height: auto;
+        @include style2(22px, 26px);
+        margin-top: -5px;
+    }
+
+    .boxInfo .info {
+        width: 94%;
+        height: auto;
+        font-family: $ffamily2;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        color: #4d5053;
+    }
+
+    .boxInfo span {
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        p {
+            font-family: $ffamily2;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 1px;
+            color: #4d5053;
+        }
+
+
+        a {
+            color: $color1 ;
+
+            i {
+                width: 30px;
+                height: 30px;
+                background-color: #F4F0EC;
+                border-radius: 50%;
+                font-size: 22px;
+                top: 12px;
+                right: 5px;
+                position: absolute;
+                align-items: center;
+                text-align: center;
+                padding-top: 3px;
+                padding-left: 1px;
+            }
+        }
+    }
+}
